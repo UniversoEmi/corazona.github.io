@@ -1,0 +1,74 @@
+body{
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: url(../img/img1.jpg);
+}
+.heart{
+    height: 150px;
+    width: 150px;
+    background-color: red;
+    position: relative;
+    transform: rotate(45deg);
+    box-shadow: -20px 20px 150px #f20044;
+    animation: palpitar 0.3s linear infinite alternate;
+}
+.contenido{
+    position: fixed;
+    margin-bottom: 50px;
+    text-align: center;
+}
+@keyframes palpitar{
+    0%{transform: rotate (45deg) scale(1.10);}
+    40%{transform: rotate(45deg) scale(1.0);}
+    100%{transform: rotate(45deg) scale(0.8);}
+}
+h1{ color: rgb(23, 21, 148)}
+h4{ color: rgb(0, 0, 0)}
+h1 {
+  font-size: 40px; /* Ajusta el tamaño del texto aquí */
+}
+
+.heart::before{
+    content: "";
+    position: absolute;
+    height: 150px;
+    width: 150px;
+    background: red;
+    right: 50%;
+    border-radius: 50%;
+    box-shadow: 20px 20px 150px #f20044;
+}
+.heart::after{
+    content: "";
+    position: absolute;
+    height: 150px;
+    width: 150px;
+    background: red;
+    top: -50%;
+    border-radius: 50%;
+    box-shadow: 20px 20px 150px #f20044;
+}
+.texto-adicional {
+position: absolute;
+top: 0; /* Posiciona el texto en la parte superior */
+left: 40%; /* Centra horizontalmente el texto en relación con su contenedor */
+transform: translateX(-50%); /* Ajusta la posición horizontal usando transform */
+text-align: center; /* Alinea el texto al centro */
+width: 70%; /* Ajusta el ancho según tus necesidades */
+}
+p {
+font-size: 150%; /* 150% del tamaño de fuente predeterminado */
+/* O puedes usar em o rem */
+font-size: 1.5em; /* 1.5 veces el tamaño de la fuente del elemento padre */
+font-size: 1.5rem; /* 1.5 veces el tamaño de la fuente del elemento raíz */
+color: pink;
+}
+h2{
+font-family: 'Love Ya Like A Sister', cursive;
+font-size: 22px;
+color: pink;
+}
