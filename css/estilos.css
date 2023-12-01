@@ -60,6 +60,11 @@ transform: translateX(-50%); /* Ajusta la posición horizontal usando transform 
 text-align: center; /* Alinea el texto al centro */
 width: 70%; /* Ajusta el ancho según tus necesidades */
 }
+.texto-adicional h2 {
+    font-size: 18px; /* Tamaño del texto para dispositivos móviles */
+    margin-bottom: 10px;
+  }
+
 p {
 font-size: 150%; /* 150% del tamaño de fuente predeterminado */
 /* O puedes usar em o rem */
